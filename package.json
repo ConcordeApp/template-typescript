@@ -1,0 +1,31 @@
+{
+  "name": "template-typescript",
+  "version": "0.0.0",
+  "scripts": {
+    "preinstall": "git config core.hooksPath hooks && chmod +x hooks/*",
+    "format": "prettier --write",
+    "format:project": "prettier --write \"**/*\"",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22.13.1",
+    "npm": "please-use-pnpm",
+    "pnpm": ">=9.15.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "~19.6.1",
+    "@commitlint/config-conventional": "~19.6.0",
+    "@eslint/js": "~9.19.0",
+    "@typescript-eslint/eslint-plugin": "~8.21.0",
+    "eslint": "~9.19.0",
+    "eslint-config-prettier": "~10.0.1",
+    "eslint-plugin-prettier": "~5.2.3",
+    "lint-staged": "~15.4.2",
+    "prettier": "~3.4.2",
+    "typescript": "~5.7.3",
+    "typescript-eslint": "~8.21.0"
+  },
+  "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0"
+}
